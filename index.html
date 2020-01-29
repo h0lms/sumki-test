@@ -6,25 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Магазин сумок</title>
-    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <header class="header-main">
-        <nav class="navigation">
+    <header class="main-header">
+        <nav class="main-header-nav">
             <a>
                 <img src="img/logo.png" alt="Название магазина" width="163" height="90">
             </a>
-            <ul class="navigation-list">
-                <li class="navigation-list-item">
+            <ul class="site-navigation">
+                <li class="site-navigation-item">
                     <a href="#">Мужчинам</a>
                 </li>
-                <li class="navigation-list-item">
+                <li class="site-navigation-item">
                     <a href="#">Женщинам</a>
                 </li>
-                <li class="navigation-list-item">
+                <li class="site-navigation-item">
                     <a href="#">Условия доставки</a>
                 </li>
-                <li class="navigation-list-item">
+                <li class="site-navigation-item">
                     <a href="#">Способы оплаты</a>
                 </li>
             </ul>
@@ -33,12 +32,11 @@
     <main>
         <h1 class="visually-hidden">Интернет-магазина сумок</h1>
         <section class="promo">
-            <h2>Акция</h2>
+            <h2 class="visually-hidden">Акция</h2 class="visually-hidden">
             <img src="img/louis-vuitton.jpg" alt="Сумка Lovis Vitton" width="817" height="505">
-            <p class="promo-prosent">- 30%</p>
-            <p class="promo-brand">на сумки<br>
-                Lovis Vitton</p>
-            <p class="promo-date">только в июле</p>
+            <p>
+                −30% <span>на сумки LOVIS VITTON</span> <span>только в июле</span>
+            </p>
             <a class="promo-btn" href="#">Перейти к колекции <span class="visually-hiden">Lovis Vitton</span></a>
         </section>
         <section class="trend">
@@ -46,25 +44,41 @@
             <p>Специально для Вас мы подобрали самые трендовые<br>
                 модели сезона весна-лето 2017</p>
             <ul class="trand-list">
-                <li class="trand-list-item">
-                    <img src="img/good-007.jpg" alt="Сумка Forla" width="200" height="250">
-                    <p><a href="#">Сумка Forla</a></p>
-                    <p class="price">15 600 &#8399;</p>
+                <li class="trand-item">
+                    <article>
+                        <h3>Сумка Forla</h3>
+                        <img src="img/good-007.jpg" alt="Сумка Forla" width="250" height="270">
+                        <p>15 600 ₽</p>
+                    </article>
+                    <a href="#">Смотреть детали</a>
+                    <button type="button">Добавить в корзину</button>
                 </li>
-                <li class="trand-list-item">
-                    <img src="img/good-202.jpg" alt="Рюкзак Chanail" width="200" height="250">
-                    <p><a href="#">Рюкзак Chanail</a></p>
-                    <p class="price">15 600 &#8399;</p>
+                <li class="trand-item">
+                    <article>
+                        <h3>Рюкзак Chanail</h3>
+                        <img src="img/good-202.jpg" alt="Рюкзак Chanail" width="250" height="270">
+                        <p>15 600 ₽</p>
+                    </article>
+                    <a href="#">Смотреть детали</a>
+                    <button type="button">Добавить в корзину</button>
                 </li>
-                <li class="trand-list-item">
-                    <img src="img/good-556.jpg" alt="Сумка Forla" width="200" height="250">
-                    <p><a href="#">Смотреть детали &#8594;</a></p>
-                    <p class="price"><a href="#">Добавить в корзину</a></p>
+                <li class="trand-item">
+                    <article>
+                        <h3>Смотреть детали ₽</h3>
+                        <img src="img/good-556.jpg" alt="Сумка Forla" width="250" height="270">
+                        <p><a href="#">Добавить в корзину</a></p>
+                    </article>
+                    <a href="#">Смотреть детали</a>
+                    <button type="button">Добавить в корзину</button>
                 </li>
-                <li class="trand-list-item">
-                    <img src="img/good-453.jpg" alt="Рюкзак Chanail" width="200" height="250">
-                    <p><a href="#">Рюкзак Chanail</a></p>
-                    <p class="price">15 600 &#8399;</p>
+                <li class="trand-item">
+                    <article>
+                        <h3>Рюкзак Chanail</h3>
+                        <img src="img/good-453.jpg" alt="Рюкзак Chanail" width="250" height="270">
+                        <p>15 600 ₽</p>
+                    </article>
+                    <a href="#">Смотреть детали</a>
+                    <button type="button">Добавить в корзину</button>
                 </li>
             </ul>
         </section>
@@ -109,23 +123,23 @@
             актуальными новостями в мире моды</p>
             <ul class="news-list">
                 <li class="news-list-item">
+                    <img src="img/news-block-002.jpg" alt="Брендовые сумки клатчи" width="315" height="240">
+                    <time datetime="2017-07-07">07.07.2017</time>
                     <h3>Женские брендовые сумки-клатчи</h3>
-                    <img src="img/news-block-002.jpg" alt="Брендовые сумки клатчи">
-                    <b>07.07.2017</b>
                     <p>Выбирая женские брендовые клатчи стоит оценить все возможныости и нюансы. А для начала уточнить ...</p>
                     <a href="#">Перейти к новости &#8594;</a>
                 </li>
                 <li class="news-list-item">
+                    <img src="img/news-block-102.jpg" alt="Брендовые сумки клатчи" width="315" height="240">
+                    <time datetime="2017-07-07">07.07.2017</time>
                     <h3>Женские сумки Baildini</h3>
-                    <img src="img/news-block-102.jpg" alt="Брендовые сумки клатчи">
-                    <b>07.07.2017</b>
                     <p>Один из самых именитых итальянских Домов моды представляет собственный взгляд на то, как именно ...</p>
                     <a href="#">Перейти к новости &#8594;</a>
                 </li>
                 <li class="news-list-item">
+                    <img src="img/news-block-502.jpg" alt="Брендовые сумки клатчи" width="315" height="240">
+                    <time datetime="2017-07-07">07.07.2017</time>
                     <h3>Mitchel Korso: как отличить от подделки</h3>
-                    <img src="img/news-block-502.jpg" alt="Брендовые сумки клатчи">
-                    <b>07.07.2017</b>
                     <p>Бренд принадлежит легендарному американском дизайнеру Майклу Корсу, которому за короткий срок удалось ...</p>
                     <a href="#">Перейти к новости &#8594;</a>
                 </li>
@@ -135,72 +149,68 @@
             <h2>Отзывы</h2>
             <p>Что говорят о нас наши клиенты</p>
             <ul class="comments-list">
-                <li class="comments-list-item">
-                    <blockquote>
+                <li class="comments-item comment">
+                    <blockquote class="comment-text">
                         <p>Все очень понравилось!<br>
                         Быстрое оформление заказа, выбор<br>
                         Удобного времени доставки. Грамотные<br>
                         и отзывчивые операторы.<br>
                         Всем большое спасибо!</p>
-                        <cite>Марина</cite>
+                        <cite class="comment-author">Марина</cite>
                     </blockquote>
                 </li>
-                <li class="comments-list-item">
-                    <blockquote>
+                <li class="comments-item comment">
+                    <blockquote class="comment-text">
                         <p>Внимательные консультанты. Вежливые.<br>
                             Пункт самовывоза находится рядом<br>
                             с метро. Есть возможность примерки.<br>
                             С примеркой не торопят. Советуют.
                         </p>
-                        <cite>Светлана</cite>
+                        <cite class="comment-author">Светлана</cite>
                     </blockquote>
                 </li>
-                <li class="comments-list-item">
-                    <blockquote>
+                <li class="comments-item comment">
+                    <blockquote class="comment-text">
                         <p>Удобный поиск, выбор на любой вкус<br>
                             и доставок, конкурентная цена, хорошие<br>
                             скидки, возможность оплаты покупки<br>
                             бонусами на 100%, быстрая доставка.</p>
-                        <cite>Ольга</cite>
+                        <cite class="comment-author">Ольга</cite>
                     </blockquote>
                 </li>
             </ul>
         </section>
     </main>
     <footer class="footer-main">
-        <ul class="navigation-footer-list">
-            <li class="navigation-footer-list-item">
-                <b>О нас</b>
-                <ul class="about-list">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Реквизиты</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </li>
-            <li class="navigation-footer-list-item">
-                <b>Сервис</b>
-                <ul class="about-list">
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Оплата</a></li>
-                    <li><a href="#">Возврат</a></li>
-                </ul>
-            </li>
-            <li class="navigation-footer-list-item">
-                <b>Дополнительно</b>
-                <ul class="about-list">
-                    <li><a href="#">Скидочная карта</a></li>
-                    <li><a href="#">Бонусы</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="contacts">
-            <ul class="social">
-                <li><a href="#vk">Вконтакте</a></li>
-                <li><a href="#f">Facebook</a></li>
-                <li><a href="#tw">Twitter</a></li>
+        <section class="about-navigation">
+            <h2>О нас</h2>
+            <ul class="about-navigation-list">
+                <li class="about-navigation-item"><a href="#">О компании</a></li>
+                <li class="about-navigation-item"><a href="#">Реквизиты</a></li>
+                <li class="about-navigation-item"><a href="#">Контакты</a></li>
             </ul>
-            <a href="#">Обратная связь</a>
-        </div>
+        </section>
+        <section class="services-navigation">
+            <h2>Сервис</h2>
+            <ul class="services-navigation-list">
+                <li class="services-navigation-item"><a href="#">Доставка</a></li>
+                <li class="services-navigation-item"><a href="#">Оплата</a></li>
+                <li class="services-navigation-item"><a href="#">Возврат</a></li>
+            </ul>
+        </section>
+        <section class="advanced-navigation">
+            <h2>Дополнительно</h2>
+            <ul class="advanced-navigation-list">
+                <li class="advanced-navigation-item"><a href="#">Скидочная карта</a></li>
+                <li class="advanced-navigation-item"><a href="#">Бонусы</a></li>
+            </ul>
+        </section>
+        <ul class="social-list">
+            <li class="social-list-item"><a href="#vk">Вконтакте</a></li>
+            <li class="social-list-item"><a href="#f">Facebook</a></li>
+            <li class="social-list-item"><a href="#tw">Twitter</a></li>
+        </ul>
+        <a href="#">Обратная связь</a>
     </footer>
 </body>
 </html>
