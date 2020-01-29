@@ -9,3 +9,7 @@ body {
     height: 1px;
     margin: -1px;
 }
+
+.price {
+    font-family: 'PT Sans', serif;
+}
